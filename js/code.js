@@ -19,11 +19,50 @@
 // var obj =document.getElementById("mybtn");
 // obj.style.backgroundColor="red";
 // // thêm thẳng css vào trong btn lun không 
-function tinh(A,B){
-    var A=parseInt(document.getElementById('txtA').value);
-    var B=parseInt(document.getElementById('txtB').value);
-    var c=document.getElementById("btn");
+// function tinh(A,B){
+//     var A=parseInt(document.getElementById('txtA').value);
+//     var B=parseInt(document.getElementById('txtB').value);
+//     var c=document.getElementById("btn");
     
-     c=A+B;
-    alert("tổng của bạn là:"+c);
+//      c=A+B;
+//     alert("tổng của bạn là:"+c);
+// }
+function tinh(){
+    var dateobj=new Date();
+    alert(dateobj)
+    //var a=document.getElementById("btn").innerHTML=dateobj;    
 }
+function doichu(){
+    var b = document.getElementById("btn1").innerHTML="hi1";
+    alert(b);
+}
+function batden(){
+    var c=document.getElementById("btn2").src='pic_bulboff.gif';
+
+}
+function tatden(){
+    var d=document.getElementById("btn3").src='pic_bulboff.gif';
+}
+// function tinhtong(){
+//     var a=parseInt (document.getElementById("txtA").value);
+//     var b=parseInt (document.getElementById("txtB").value);
+//     var c=document.getElementById("btn4").innerHTML=a+b;
+//     alert(c);
+// }
+//Hàm trong javascrip
+function tinhtong(a,b){
+    return a+b;
+}
+    c=document.getElementById('btn4').innerHTML=tinhtong(4,5)
+//xử lí các đối tượng nhiều biến
+// var xe={ kieu:"dep",mau:"do",lop:"345"};
+// document.getElementById("demo").innerHTML= "xe nay"+xe.kieu;
+// var xe={ keu:"xe",aa:"a",q:"asd"};
+// document.getElementById("demo1").innerHTML=xe.aa;
+var person={
+    Ho:"Lê",Holot: "Thanh" ,Ten:"Tan"
+}
+function fullname(){
+    return person.Ho+" "+person.Holot+" "+person.Ten;
+}
+document.getElementById("demo2").innerHTML=fullname()
