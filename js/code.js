@@ -66,3 +66,19 @@ function fullname(){
     return person.Ho+" "+person.Holot+" "+person.Ten;
 }
 document.getElementById("demo2").innerHTML=fullname()
+function b(){
+var a=document.getElementById("btn1").innerHTML=Date();
+}function tinhs(){
+var x="sdasdasdasdasdasd"
+alert(document.getElementById("btn5").innerHTML=x.length);
+}
+function dodaichuoi(){
+var x="facebook'youtube' messennger";
+var  t=x.indexOf("youtube");//đo khoảng cách từ  chữ đến chữ y là 9 kí tự khoong  tính vị trí của chữ y
+alert(document.getElementById("btn6").innerHTML=t);
+}
+function dodaichuoi1(){
+    var v="facebook'youtube' messennger";
+    var t=v.lastIndexOf("e");
+    alert(document.getElementById("btn7").innerHTML=t);
+}
